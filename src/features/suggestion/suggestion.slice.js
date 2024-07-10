@@ -13,7 +13,7 @@ export const fetchSuggestion =
 const initialState = {
   suggestion: '',
   loading: false,
-  error: true,
+  error: false,
 };
 
 const options = {
@@ -26,8 +26,8 @@ const options = {
       state.loading = true;
       state.error = false;
     },
-    [fetchSuggestion.fulfilled]: (state, { payload: { suggestion, author } }) => {
-      state.suggestion = { suggestion, author };
+    [fetchSuggestion.fulfilled]: (state, { payload: { imageUrl, caption } }) => {
+      state.suggestion = { imageUrl, caption };
       state.loading = false;
       state.error = false;
     },

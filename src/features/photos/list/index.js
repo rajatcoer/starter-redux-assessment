@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import {
   // Task 7: Import the `removePhoto()` action creator from the photos slice
-  selectAllPhotos,
   removePhoto,
   // Task 13: Import the `selectFilteredPhotos()` selector from the photos slice
   selectFilteredPhotos

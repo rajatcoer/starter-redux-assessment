@@ -6,7 +6,6 @@ import { addPhoto } from '../photos.slice';
 // Task 3: Import the `addPhoto()` action creator from the photos slice
 
 import './create.css';
-import photos from '../photos.data';
 
 export default function CreatePhoto() {
   const [formData, setFormData] = useState({ imageUrl: '', caption: '' });
